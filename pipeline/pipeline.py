@@ -19,7 +19,8 @@ from sagemaker.xgboost.estimator import XGBoost
 # AWS setup
 region = boto3.Session().region_name
 session = sagemaker.session.Session()
-role = sagemaker.get_execution_role()
+# role = sagemaker.get_execution_role()
+role="arn:aws:iam::218736973000:role/service-role/AmazonSageMaker-ExecutionRole-20260209T120967"
 
 bucket = "placement-project-bkt"
 
